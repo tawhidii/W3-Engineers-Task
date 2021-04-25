@@ -1,5 +1,4 @@
 
-
 function buttonSubmit(title,price){
     fetch('/config/')
     .then((res)=>{return res.json() })
