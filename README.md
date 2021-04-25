@@ -1,4 +1,4 @@
-# Geo Django 
+
 
 
 A web application for stipe integration with Django , task given by W3Engineers ltd. 
