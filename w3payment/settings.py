@@ -68,6 +68,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
+         
         },
     },
 ]
@@ -122,12 +123,22 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_URL = '/static/'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
+# Static settings
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    BASE_DIR / BASE_DIR / 'static'
+]
+# STATIC_ROOT = 'static'
+# Media settings
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'uploads'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+STRIPE_PUBLISHABLE_KEY  = 'pk_test_51Ijo1PJYovWbr4ojTIzoGKUoSTAtIz7nJWxboR06GOvkoYNHNaIGQHiJidn5zRabm1ovzAYSbl1Ozsj2x39R9qbx00uZ74mPW3'
+
+STRIPE_SECRET_KEY  = 'sk_test_51Ijo1PJYovWbr4ojSGD05a312nnMrnc6j6gY794uMwPVYGc57gAE9yYlDTzWz9lkrmiFbRCieAVFQJIpBABNzqYm00i6fuflDR'
